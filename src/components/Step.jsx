@@ -4,12 +4,12 @@ import React from "react";
 import { AiFillAndroid } from "react-icons/ai";
 import { GoLocation } from "react-icons/go";
 
-const Step = ({ badgeName, isCurrent, SEQ_NUMBER }) => {
-  let themeClasses;
-  if (SEQ_NUMBER > 2) {
-    themeClasses = "bg-blue-500";
+const Step = ({ badgeName, isCurrent, SEQ_NUMBER, isCompleted }) => {
+  let stepColour;
+  if (isCompleted == true) {
+    stepColour = "bg-green-500";
   } else {
-    themeClasses = "bg-green-500";
+    stepColour = "bg-blue-500";
   }
   return (
     <div className="flex flex-col space-y-4 justify-end">
@@ -27,9 +27,9 @@ const Step = ({ badgeName, isCurrent, SEQ_NUMBER }) => {
       )}
       <div
         style={{ marginBottom: (SEQ_NUMBER - 1) * 52 }}
-        className={"h-32 w-32 " + themeClasses}
+        className={"h-32 w-32 " + stepColour}
       >
-        <span className="text-sm font-semibold text-white">
+        <span className="text-sm my-6 font-semibold text-white">
           WORKOUT {SEQ_NUMBER}
         </span>
       </div>
