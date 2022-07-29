@@ -15,23 +15,23 @@ const Step = ({ badgeName, isCurrent, SEQ_NUMBER, isCompleted }) => {
     <div className="flex flex-col space-y-4 justify-end">
       {isCurrent && (
         <div className="text-center">
-          <p className="text-sm">YOU ARE HERE</p>
+          <p className="text-xs mb-20">YOU ARE HERE</p>
           <GoLocation className="m-auto" />
         </div>
       )}
       {badgeName && (
         <div className="text-center">
-          <p className="text-sm uppercase"> {badgeName} </p>
+          <p className="text-xs uppercase"> {badgeName} </p>
           <AiFillAndroid className="m-auto" />
         </div>
       )}
       <div
-        style={{ marginBottom: (SEQ_NUMBER - 1) * 52 }}
-        className={"h-32 w-32 " + stepColour}
+        style={{ marginBottom: (SEQ_NUMBER - 1) * 44 }}
+        className={"h-24 w-24 " + stepColour}
       >
-        <span className="text-sm my-6 font-semibold text-white">
+        <p className="text-xs my-10 mx-2 font-semibold text-white">
           WORKOUT {SEQ_NUMBER}
-        </span>
+        </p>
       </div>
     </div>
   );
