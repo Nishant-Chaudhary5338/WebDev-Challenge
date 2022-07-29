@@ -25,7 +25,10 @@ const Step = ({ badgeName, isCurrent, SEQ_NUMBER }) => {
           <AiFillAndroid className="m-auto" />
         </div>
       )}
-      <div className={"mt-2 h-32 w-32 " + themeClasses}>
+      <div
+        style={{ marginBottom: (SEQ_NUMBER - 1) * 52 }}
+        className={"h-32 w-32 " + themeClasses}
+      >
         <span className="text-sm font-semibold text-white">
           WORKOUT {SEQ_NUMBER}
         </span>
