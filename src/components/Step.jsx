@@ -15,14 +15,14 @@ const Step = ({ badgeName, isCurrent, SEQ_NUMBER, isCompleted }) => {
     <div className="flex flex-col space-y-4 justify-end">
       {isCurrent && (
         <div className="text-center">
-          <p className="text-xs mb-20">YOU ARE HERE</p>
-          <GoLocation className="m-auto" />
+          <p className="text-xs mb-6">YOU ARE HERE</p>
+          <GoLocation size={50} className="m-auto text-red-600" />
         </div>
       )}
       {badgeName && (
         <div className="text-center">
           <p className="text-xs uppercase"> {badgeName} </p>
-          <AiFillAndroid className="m-auto" />
+          <AiFillAndroid size={70} className="m-auto text-yellow-400" />
         </div>
       )}
       <div

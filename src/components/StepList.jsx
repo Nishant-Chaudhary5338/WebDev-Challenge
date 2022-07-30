@@ -7,8 +7,8 @@ import Step from "./Step";
 const StepList = () => {
   return (
     <div className="m-20 space-y-40">
-      <div className="flex space-x-20 bg-gray-200 rounded-md m-20 p-20">
-        <div className="w-44 relative top-40">
+      <div className="flex items-end space-x-20 bg-gray-200 rounded-md m-20 p-20">
+        <div className="w-44 ">
           <img
             src="https://www.kindpng.com/picc/m/53-534592_running-cartoon-man-png-download-cartoon-running-man.png"
             alt=""
@@ -28,14 +28,15 @@ const StepList = () => {
           ))}
         </div>
       </div>
-      <div className="flex space-x-20 bg-gray-200 rounded-md m-20 p-20">
-        <div className="w-44 relative top-20">
+
+      <div className="flex items-end space-x-20 bg-gray-200 rounded-md m-20 p-20">
+        <div className="w-44">
           <img
             src="https://www.kindpng.com/picc/m/53-534592_running-cartoon-man-png-download-cartoon-running-man.png"
             alt=""
           />
         </div>
-        <div className="flex items-stretch">
+        <div className="flex">
           {sampleData2.map((s) => (
             <Step
               key={s.id}
@@ -47,8 +48,8 @@ const StepList = () => {
           ))}
         </div>
       </div>
-      <div className="flex space-x-20 bg-gray-200 rounded-md m-20 p-20">
-        <div className="w-44 relative top-52">
+      <div className="flex items-end space-x-20 bg-gray-200 rounded-md m-20 p-20">
+        <div className="w-44">
           <img
             className=""
             src="https://www.kindpng.com/picc/m/53-534592_running-cartoon-man-png-download-cartoon-running-man.png"
